@@ -19,7 +19,7 @@ public class FootballMatch {
 
          result = new JLabel("Result: 0 X 0");
          lastScorer = new JLabel("Last Scorer: N/A");
-        winner = new Label("Winner: DRAW");
+         winner = new Label("Winner: DRAW");
 
         result.setHorizontalAlignment(JLabel.CENTER);
         lastScorer.setHorizontalAlignment(JLabel.CENTER);
