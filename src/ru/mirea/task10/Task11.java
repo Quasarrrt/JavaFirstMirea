@@ -3,38 +3,17 @@ package ru.mirea.task10;
 import java.util.Scanner;
 
 public class Task11 {
-    public static int recursion() {
+    public static int one() {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
-        // Базовый случай
-        if (n == 1) {
-            int m = in.nextInt();
-            // Базовый случай
-            if (m == 1) {
-                // Шаг рекурсии / рекурсивное условие
-                return recursion() + n + m;
-            } else {
-                int k = in.nextInt();
-                // Базовый случай
-                if (k == 1) {
-                    // Шаг рекурсии / рекурсивное условие
-                    return recursion() + n + m + k;
-                } else {
-                    return n + m + k;
-                }
-            }
-        } else {
-            int m = in.nextInt();
-            // Базовый случай
-            if (m == 1) {
-                // Шаг рекурсии / рекурсивное условие
-                return recursion() + n + m;
-            } else {
-                return n + m;
-            }
-        }
+        if (n == 00)
+            return 0;
+        if (n == 1)
+            return one() + 1;
+        else
+            return one();
     }
     public static void main(String[] args) {
-        System.out.println(recursion()); // вызов рекурсивной функции
+        System.out.println("Всего единиц тут: "+one());
     }
 }
