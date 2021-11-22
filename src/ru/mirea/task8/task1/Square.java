@@ -1,5 +1,4 @@
 package ru.mirea.task8.task1;
-
 import java.awt.*;
 public class Square extends Shape
 {
@@ -8,7 +7,7 @@ public class Square extends Shape
     {
         this.side = side;
         this.color = color;
-        this.point = new Point(x,y);
+        this.pos = new Point(x,y);
     }
     public int getSide()
     {
@@ -16,11 +15,11 @@ public class Square extends Shape
     }
     public double getX()
     {
-        return point.getX();
+        return pos.getX();
     }
     public double getY()
     {
-        return point.getY();
+        return pos.getY();
     }
     @Override
     public Color getColor()

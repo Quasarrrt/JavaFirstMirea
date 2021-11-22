@@ -1,20 +1,25 @@
 package ru.mirea.task8.task1;
 import java.awt.*;
-public abstract class Shape {
+public abstract class Shape
+{
     protected Color color;
-    protected Point point;
-    public Shape(Color color, Point point) {
+    protected Point pos;
+    public Shape(Color color, Point pos)
+    {
         this.color = color;
-        this.point = point;
+        this.pos = pos;
     }
-    public Shape() {
-        this.color =Color.PINK;
+    public Shape()
+    {
+        color = Color.BLACK;
     }
-    public void setPoint(Point point) {
-        this.point = point;
+    public Point getPos()
+    {
+        return pos;
     }
-    public Point getPoint() {
-        return point;
+    public void  setPos(Point pos)
+    {
+        this.pos = pos;
     }
-    public abstract Color getColor() ;
+    public abstract Color getColor();
 }
