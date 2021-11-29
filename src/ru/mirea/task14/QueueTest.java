@@ -11,11 +11,11 @@ public class QueueTest {
         var secondPlayerCards = new LinkedList<Integer>();
         System.out.print("Введите карты 1-го игрока: ");
         for (int i = 0; i < AMOUNT_OF_CARDS; ++i) {
-            firstPlayerCards.add(IN.nextInt());
+            firstPlayerCards.offer(IN.nextInt());
         }
         System.out.print("Введите карты 2-го игрока: ");
         for (int i = 0; i < AMOUNT_OF_CARDS; ++i) {
-            secondPlayerCards.add(IN.nextInt());
+            secondPlayerCards.offer(IN.nextInt());
         }
         int steps = 0; while (true) {
             if (steps >= 106) { System.out.println();
@@ -28,23 +28,23 @@ public class QueueTest {
                 break;
             int secondPlayerCard = secondPlayerCards.poll();
             if (firstPlayerCard < secondPlayerCard) {
-                if (firstPlayerCard == 0 && secondPlayerCard == 9) {// младшая карта побеждает старшую
-                    firstPlayerCards.add(firstPlayerCard);
-                    firstPlayerCards.add(secondPlayerCard);
+                if (firstPlayerCard == 0 && secondPlayerCard == 9) {
+                    firstPlayerCards.offer(firstPlayerCard);
+                    firstPlayerCards.offer(secondPlayerCard);
                 }
                 else {
-                    secondPlayerCards.add(firstPlayerCard);
-                    secondPlayerCards.add(secondPlayerCard);
+                    secondPlayerCards.offer(firstPlayerCard);
+                    secondPlayerCards.offer(secondPlayerCard);
                 }
             }
             else {
-                if (firstPlayerCard == 9 && secondPlayerCard == 0) {	// младшая карта побеждает старшую
-                    secondPlayerCards.add(firstPlayerCard);
-                    secondPlayerCards.add(secondPlayerCard);
+                if (firstPlayerCard == 9 && secondPlayerCard == 0) {
+                    secondPlayerCards.offer(firstPlayerCard);
+                    secondPlayerCards.offer(secondPlayerCard);
                 }
                 else {
-                    firstPlayerCards.add(firstPlayerCard);
-                    firstPlayerCards.add(secondPlayerCard);
+                    firstPlayerCards.offer(firstPlayerCard);
+                    firstPlayerCards.offer(secondPlayerCard);
                 }
             }
             ++steps;

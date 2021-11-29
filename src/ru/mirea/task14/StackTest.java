@@ -35,7 +35,7 @@ public class StackTest {
             int secondPlayerCard = secondPlayerCards.pop();
             reverse(firstPlayerCards, secondPlayerCards);
             if (firstPlayerCard < secondPlayerCard) {
-                if (firstPlayerCard == 0 && secondPlayerCard == 9) {	// младшая карта побеждает старшую
+                if (firstPlayerCard == 0 && secondPlayerCard == 9) {
                     firstPlayerCards.push(firstPlayerCard);
                     firstPlayerCards.push(secondPlayerCard);
                 }
@@ -45,7 +45,7 @@ public class StackTest {
                 }
             }
             else {
-                if (firstPlayerCard == 9 && secondPlayerCard == 0) {	// младшая карта побеждает старшую
+                if (firstPlayerCard == 9 && secondPlayerCard == 0) {
                     secondPlayerCards.push(firstPlayerCard);
                     secondPlayerCards.push(secondPlayerCard);
                 }

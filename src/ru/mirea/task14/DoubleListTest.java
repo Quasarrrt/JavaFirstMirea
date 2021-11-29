@@ -1,14 +1,14 @@
 package ru.mirea.task14;
 
+import java.util.LinkedList;
 import java.util.Scanner;
-import java.util.ArrayDeque;
 
-public class Dequeue {
+public class DoubleListTest {
     private static final int AMOUNT_OF_CARDS = 5;
     private static final Scanner IN = new Scanner(System.in);
     public static void main(String[] args) {
-        var firstPlayerCards = new ArrayDeque<Integer>();
-        var secondPlayerCards = new ArrayDeque<Integer>();
+        var firstPlayerCards = new LinkedList<Integer>();
+        var secondPlayerCards = new LinkedList<Integer>();
         System.out.print("Введите карты 1-го игрока: ");
         for (int i = 0; i < AMOUNT_OF_CARDS; ++i) {
             firstPlayerCards.add(IN.nextInt());
@@ -17,19 +17,16 @@ public class Dequeue {
         for (int i = 0; i < AMOUNT_OF_CARDS; ++i) {
             secondPlayerCards.add(IN.nextInt());
         }
-        int steps = 0;
-        while (true) {
+        int steps = 0; while (true) {
             if (steps >= 106) { System.out.println();
-                System.out.println("botva");
-                return;
+                System.out.println("botva"); return;
             }
-
             if (firstPlayerCards.isEmpty())
                 break;
-            int firstPlayerCard = firstPlayerCards.poll();
+            int firstPlayerCard = firstPlayerCards.remove();
             if (secondPlayerCards.isEmpty())
                 break;
-            int secondPlayerCard = secondPlayerCards.poll();
+            int secondPlayerCard = secondPlayerCards.remove();
             if (firstPlayerCard < secondPlayerCard) {
                 if (firstPlayerCard == 0 && secondPlayerCard == 9) {
                     firstPlayerCards.add(firstPlayerCard);
