@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ru.mirea.task32</OriginalElement>
+  <nodes>
+    <node x="248.0" y="387.0">ru.mirea.task32.Product</node>
+    <node x="0.0" y="218.0">ru.mirea.task32.VIPClient</node>
+    <node x="465.0" y="218.0">ru.mirea.task32.Credit</node>
+    <node x="717.0" y="622.0">ru.mirea.task32.EnumProductType</node>
+    <node x="16.0" y="0.0">ru.mirea.task32.Client</node>
+    <node x="489.0" y="622.0">ru.mirea.task32.ClientTest</node>
+    <node x="0.0" y="387.0">ru.mirea.task32.ProductsType</node>
+    <node x="216.0" y="622.0">ru.mirea.task32.Generic</node>
+    <node x="0.0" y="813.0">ru.mirea.task32.Factory</node>
+    <node x="375.5" y="0.0">ru.mirea.task32.ProductStrategy</node>
+    <node x="192.0" y="813.0">ru.mirea.task32.Hash</node>
+    <node x="384.0" y="813.0">ru.mirea.task32.TimeDate</node>
+    <node x="0.0" y="622.0">ru.mirea.task32.ExceptionTest</node>
+    <node x="697.0" y="196.0">ru.mirea.task32.CEO</node>
+    <node x="565.0" y="387.0">ru.mirea.task32.Regular</node>
+    <node x="688.0" y="0.0">ru.mirea.task32.Employee</node>
+    <node x="261.0" y="218.0">ru.mirea.task32.Deposit</node>
+    <node x="576.0" y="813.0">ru.mirea.task32.HashMapTask</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ru.mirea.task32.Deposit" target="ru.mirea.task32.ProductStrategy" relationship="GENERALIZATION">
+      <point x="0.0" y="-61.5" />
+      <point x="353.0" y="193.0" />
+      <point x="453.5" y="193.0" />
+      <point x="0.0" y="84.0" />
+    </edge>
+    <edge source="ru.mirea.task32.VIPClient" target="ru.mirea.task32.Client" relationship="GENERALIZATION">
+      <point x="0.0" y="-62.0" />
+      <point x="0.0" y="84.0" />
+    </edge>
+    <edge source="ru.mirea.task32.CEO" target="ru.mirea.task32.Employee" relationship="GENERALIZATION">
+      <point x="0.0" y="-62.0" />
+      <point x="0.0" y="73.0" />
+    </edge>
+    <edge source="ru.mirea.task32.Credit" target="ru.mirea.task32.ProductStrategy" relationship="GENERALIZATION">
+      <point x="0.0" y="-61.5" />
+      <point x="554.0" y="193.0" />
+      <point x="453.5" y="193.0" />
+      <point x="0.0" y="84.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.6271929824561403" showDependencies="false" x="443.5" y="446.00000000000006" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
